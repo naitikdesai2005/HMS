@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Complaints</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>View Complaints</h1>
+    <table>
+        <tr>
+            <th>Room No.</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Complaint Type</th>
+        </tr>
+        <% manageComplaint.forEach(item => { %>
+            <tr>
+                <td><%= item.room_no %></td>
+                <td><%= item.selecttype %></td>
+                <td><%= item.description %></td>
+                <td><%= item.title %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>

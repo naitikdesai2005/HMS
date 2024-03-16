@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Complaint</title>
+</head>
+<body>
+    <h1>Add Complaint</h1>
+    <form action="/student/add-complaint" method="post">
+        <label>Room Number</label>
+        <input type="Number" required name="room_no"/>
+        <br>
+        <label>Title</label>
+        <input type="text" required name="title"/>
+        <br>
+        <label>Description</label>
+        <textarea  type="text" id="description" name="description" rows="4" cols="50"></textarea>
+        <br>
+        <label>Complaint Type</label>
+        <select name="selecttype">
+            <option value="estate">Estate</option>
+            <option value="food">Food</option>
+            <option value="cleaning">Cleaning</option>
+            <option value="misbehavior">Misbehave of Any Student</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

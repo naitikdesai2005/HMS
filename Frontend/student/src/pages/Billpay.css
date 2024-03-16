@@ -1,0 +1,15 @@
+.fee-structure {
+  font-family: Arial, sans-serif;
+  color: black;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
